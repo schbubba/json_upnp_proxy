@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "json_upnp_proxy"
+version = "0.1.0"
+description = "Convert UPnp xml to json responses"
+authors = [
+  { name="James Hollon", email="james.hollon@gmail.com" }
+]
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.11"
+dependencies = [
+  "async_ssdp @ git+https://github.com/schbubba/async_ssdp.git",
+  "upnp_to_json @ git+https://github.com/schbubba/upnp_to_json.git"
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent"
+]
